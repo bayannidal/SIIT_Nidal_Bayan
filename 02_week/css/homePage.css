@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #dbf6e9; */
+    background-color: #ffc996;
+}
+
+nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    min-height: 7vh;
+    /* background-color: #31326f; */
+    background-color: #9f5f80;
+    border-radius: 0 0 40px 40px;
+    align-items: center;
+    box-shadow: 0 0 5px #2f3640;
+}
+
+.logo {
+    height: 45px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 40px;
+}
+
+.nav-links a {
+    letter-spacing: 3px;
+    color: #ffc996;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-bar-items {
+    padding: 0 25px;
+    margin: 0 10px;
+}
+
+li {
+    transition: ease-in-out .4s;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+a {
+    transition: ease-in-out .4s;
+}
+
+.nav-bar-items:hover {
+    color: #9f5f80;
+    background-color: #ff8474;
+    border-radius: 40px;
+}
+
+.mid {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blogs {
+    height: 500px;
+    width: 550px;
+    /* background-color: #ffc93c; */
+    background-color: #ff8474;
+    text-align: center;
+    border-radius: 40px;
+    transition: ease-in-out .2s;
+    box-shadow: 0 0 5px #2f3640;
+    margin: 0 20px;
+}
+
+.blogs:hover {
+    transform: scale(1.1);
+}
+
+.react-img {
+    height: 300px;
+    margin: 60px;
+    transition: ease-in-out .2s;
+}
+
+.angular-img {
+    height: 300px;
+    margin: 60px;
+    transition: ease-in-out .2s;
+}
+
+.angular-img:hover,
+.react-img:hover {
+    transform: scale(1.1);
+}
+
+.post-link {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: overline;
+}
+
+.post-link:hover {
+    font-size: 18px;
+    transition: ease-in-out .2s;
+}
+
+.post-div {
+    position: absolute;
+    width: 400px;
+    bottom: 10px;
+}
+
+.bottom {
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #9f5f80;
+    box-shadow: 0 0 5px #2f3640;
+    border-radius: 40px 40px 0 0;
+}
