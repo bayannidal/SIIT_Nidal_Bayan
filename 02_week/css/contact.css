@@ -107,13 +107,48 @@ input:hover {
     transform: scale(1.1);
 }
 
+input::placeholder {
+    color: #ffc996;
+    opacity: 0.8;
+}
+
 .message {
     height: 300px;
 }
 
-input::placeholder {
+.paragraph {
+    background-color: #ff8474;
+    border-radius: 20px;
+    border: none;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 0 5px 1px #9f5f80;
+    color: #ffc996;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    padding: 10px 10px;
+    transition: ease-in-out .2s;
+    resize: none;
+}
+
+.paragraph:hover {
+    transform: scale(1.1);
+}
+
+.paragraph::placeholder {
     color: #ffc996;
     opacity: 0.8;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #ffc996;
+    background: #9f5f80;
+}
+
+ ::selection {
+    color: #ffc996;
+    background: #9f5f80;
 }
 
 .button {
