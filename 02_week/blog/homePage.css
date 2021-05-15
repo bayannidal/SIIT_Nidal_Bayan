@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100vw;
+    z-index: 0;
+    padding: 40px;
+
+}
+
+.blogs {
+    position: relative;
+    height: 300px;
+    width: 250px;
+    background-color: #ff8474;
+    text-align: center;
+    border-radius: 40px;
+    transition: ease-in-out .2s;
+    box-shadow: 0 0 5px #2f3640;
+    margin: 50px 20px;
+}
+
+.blogs:hover {
+    transform: scale(1.1);
+}
+
+.react-img {
+    width: 100px;
+    margin: 60px;
+    transition: ease-in-out .2s;
+}
+
+.angular-img {
+    width: 100px;
+    margin: 60px;
+    transition: ease-in-out .2s;
+}
+
+.angular-img:hover,
+.react-img:hover {
+    transform: scale(1.1);
+}
+
+.post-link {
+    position: absolute;
+    color: white;
+    text-align: left;
+    font-size: 10px;
+    text-decoration: overline;
+    left: 20px;
+    bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.post-link:hover {
+    font-size: 11px;
+    transition: ease-in-out .2s;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        justify-content: center;
+    }
+}
+
+#myBtn {
+    background-color: #9f5f80;
+    border: none;
+    border-radius: 50%;
+    color: #ffc996;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: ease-in-out .3s;
+    z-index: 99;
+}
+
+#myBtn:hover {
+    transform: scale(1.2);
+    background-color: #2f3640;
+    color: #ffc996;
+}

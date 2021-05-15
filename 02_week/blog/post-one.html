@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 1</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="gaming.png">
+        </div>
+
+        <ul class="nav-links">
+            <li><a class="nav-bar-items " href="home.html">Home</a></li>
+            <li><a class="nav-bar-items " href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <div class="container">>
+        <div class="img-div"> <img class="img" src="react.png"> </div>
+
+        <div class="articol">
+            <h1>10 tipes for tunig React UI performance</h1>
+
+
+            <p>React stays the most popular JavaScript framework. This text covers the most recent tips about wringing
+                probably the most efficiency from the React framework, together with useful elements and the Suspense
+                function.
+                React works by sustaining an in-memory mannequin of the view (usually known as a digital DOM) that’s
+                used to find out if and when the precise DOM must be up to date.</p>
+            <p>Manipulating the precise DOM is pricey, so many efficiency enhancements revolve round making certain that
+                modifications to the DOM happen solely when completely essential.</p>
+            <p>We’ll have a look at a number of of those DOM-oriented methods right here, with variations for useful and
+                class-based elements, together with some extra normal ideas.
+                When writing class-based elements, you possibly can override the shouldComponentUpdate() lifecycle
+                technique. The aim of this technique is to explicitly declare whether or not the part requires
+                re-rendering. To reiterate, rendering is the costly a part of the lifecycle whereby the precise DOM is
+                up to date. React solely renders if a part’s props or state have modified, however typically you
+                possibly can skip even this, avoiding calling render in any respect.
+                The signature and motion of shouldComponentUpdate is easy. Itemizing 1 has a primary instance. The
+                thought right here is that you realize your part and you’ll specify these situations the place it ought
+                to and mustn’t replace. The tactic receives the incoming props and state as arguments. If the tactic
+                returns true, the part will render, in any other case it is not going to.
+            </p>
+        </div>
+
+
+
+
+</body>
+
+</html>
