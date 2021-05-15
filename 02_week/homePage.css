@@ -8,7 +8,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffc996;
+    background-color: #161a1d;
+
 }
 
 header {
@@ -19,8 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     min-height: 20px;
-    /* background-color: #31326f; */
-    background-color: #9f5f80;
+    background-color: #ffc996;
     border-radius: 0 0 40px 40px;
     align-items: center;
     box-shadow: 0 0 5px #2f3640;
@@ -43,7 +43,6 @@ header {
 
 .nav-links a {
     letter-spacing: 3px;
-    color: #ffc996;
     text-decoration: none;
     font-size: 18px;
 }
@@ -65,34 +64,41 @@ a {
     transition: ease-in-out .4s;
 }
 
-.nav-bar-items:hover {
-    color: #9f5f80;
-    background-color: #ff8474;
+.active {
+    background-color: #2f3640;
+    color: #ffc996;
     border-radius: 40px;
+}
+
+.contact {
+    color: #2f3640;
 }
 
 .container {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: auto;
-    width: 100vw;
     z-index: 0;
-    padding: 40px;
+    align-items: center;
+    width: 95%;
+
 
 }
 
-.mid {}
+.mid {
+    margin: 50px;
+}
+
 
 .blogs {
     position: relative;
     height: 300px;
     width: 250px;
-    background-color: #ff8474;
+    background-color: #2f3640;
     text-align: center;
     border-radius: 40px;
     transition: ease-in-out .2s;
-    box-shadow: 0 0 5px #2f3640;
+    box-shadow: 0 0 5px #0b090a;
     margin: 50px 20px;
 }
 
@@ -139,27 +145,41 @@ a {
 @media screen and (max-width: 768px) {
     .container {
         justify-content: center;
+        padding-top: 40px;
+        margin: 0 10px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .container {
         justify-content: center;
+        padding-top: 50px;
+        margin: 0 20px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin: 0 20px;
+        padding: 50px;
+
     }
 }
 
 #myBtn {
-    background-color: #9f5f80;
+    background-color: #ffc996;
     border: none;
     border-radius: 50%;
-    color: #ffc996;
+    /* color: #ffc996; */
+    color: #2f3640;
     cursor: pointer;
     font-size: 16px;
     line-height: 48px;
     width: 48px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 15px;
+    bottom: 15px;
     transition: ease-in-out .3s;
     z-index: 99;
 }
