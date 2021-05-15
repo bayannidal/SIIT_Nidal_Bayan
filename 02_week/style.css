@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +7,26 @@
 }
 
 body {
-    height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #ffec96;
+    background-color: #ffc996;
 }
 
-nav {
+header {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
     justify-content: space-between;
-    min-height: 7vh;
+    min-height: 20px;
     /* background-color: #31326f; */
     background-color: #9f5f80;
     border-radius: 0 0 40px 40px;
     align-items: center;
     box-shadow: 0 0 5px #2f3640;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -36,18 +38,18 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    padding-right: 40px;
+    padding-right: 30px;
 }
 
 .nav-links a {
     letter-spacing: 3px;
     color: #ffc996;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .nav-bar-items {
-    padding: 0 25px;
+    padding: 0 20px;
     margin: 0 10px;
 }
 
@@ -68,60 +70,3 @@ a {
     background-color: #ff8474;
     border-radius: 40px;
 }
-
-.mid {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.blogs {
-    height: 500px;
-    width: 550px;
-    /* background-color: #ffc93c; */
-    background-color: #ff8474;
-    text-align: center;
-    border-radius: 40px;
-    transition: ease-in-out .2s;
-    box-shadow: 0 0 5px #2f3640;
-    margin: 0 20px;
-}
-
-.blogs:hover {
-    transform: scale(1.1);
-}
-.container {
-    display: flex;
-    flex-direction: row;
-}
-
-.img-div {
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 50px;
-
-}
-
-p {
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-.img {
-
-    border-radius: 50px;
-    width: 350px;
-
-}
-.articol {
-    box-sizing: border-box;
-    width: 1200px;
-    padding: 20px;
-    margin: 30px;
-    border: 5px; }
-
