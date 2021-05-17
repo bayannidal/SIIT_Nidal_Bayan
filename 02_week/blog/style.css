@@ -13,7 +13,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-;
     min-height: 20px;
     /* background-color: #31326f; */
     background-color: #9f5f80;
