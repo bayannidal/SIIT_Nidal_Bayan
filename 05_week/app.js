@@ -14,11 +14,14 @@ divContainer.style.color = 'white';
 divContainer.style.height = '100%';
 divContainer.style.padding = '20px';
 document.body.appendChild(divContainer);
+
 let divInput = document.createElement('div')
+
 let inputEmail = document.createElement('input');
 inputEmail.placeholder = 'Name';
 
 let inputCom = document.createElement('textarea');
+
 let inputTag = document.getElementsByTagName('input');
 inputCom.placeholder = 'Type here..';
 
@@ -42,28 +45,22 @@ commentSection.style.display = 'flex';
 commentSection.style.flexDirection = 'column';
 commentSection.style.flexWrap = 'wrap';
 commentSection.style.overflowY = 'none';
+
 let username = document.createElement('h2');
+
 var emailTxt = document.createElement('span');
-// emailTxt.textContent = 'dog';
-// divInput.appendChild(emailTxt)
+
 divInput.appendChild(inputEmail);
-// divInput.appendChild(buttonEmail);
-
-// var commentTxt = document.createElement('span');
-
-// commentTxt.textContent = 'dog';
-// divInput.appendChild(commentTxt);
-
 divInput.appendChild(inputCom);
 
 divInput.style.display = 'flex';
 divInput.style.flexWrap = 'wrap';
 divInput.style.justifyContent = 'space-around'
+
 inputCom.style.backgroundColor = 'inherit';
 inputCom.style.height = '100px';
 inputCom.style.borderRadius = '30px';
 inputCom.style.border = 'none';
-// inputCom.style.boxShadow = '1px 1px 5px 0 #5e5992';
 inputCom.style.margin = '30px 0';
 inputCom.style.padding = '0 10px';
 inputCom.style.outline = 'none';
@@ -72,6 +69,7 @@ inputCom.style.color = 'white';
 inputCom.classList.add('your-class');
 inputCom.style.fontSize = '1rem';
 inputCom.style.fontWeight = '400';
+
 divInput.appendChild(buttonCom);
 divContainer.appendChild(commentSection);
 commentSection.appendChild(divInput)
@@ -92,7 +90,6 @@ for (var i = 0; i < inputTag.length; i++) {
     inputTag[i].style.fontSize = '16px';
     inputTag[i].style.fontWeight = '400';
 }
-
 
 
 buttonCom.addEventListener('click', function () {
