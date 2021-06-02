@@ -1,0 +1,7 @@
+.your-class::-webkit-input-placeholder {
+    color: white;
+    /* color: #795e86; */
+    opacity: 1;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
