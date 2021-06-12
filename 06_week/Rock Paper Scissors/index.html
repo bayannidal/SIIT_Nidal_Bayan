@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="app">
+            <div id="gameContainer">
+                <p>Please select your hand:</p>
+                <div class="inputDiv">
+                    <input type="radio" id="rock" name="choice" value="rock">
+                    <label for="rock">Rock</label><br>
+                    <input type="radio" id="paper" name="choice" value="paper">
+                    <label for="paper">Paper</label><br>
+                    <input type="radio" id="scissors" name="choice" value="scissors">
+                    <label for="scissors">Scissors</label>
+                </div>
+                <div id="resultScore"></div>
+                <div id="result"></div>
+                <div class="score">
+                    <span id="pcScore">PC Score: 0</span>
+                    <span id="userScore">User Score: 0</span>
+                </div>
+            </div>
+            <div id="buttonContainer">
+                <button id="play" onclick="play()">Play</button>
+                <button id="buttonStart">Start Game</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

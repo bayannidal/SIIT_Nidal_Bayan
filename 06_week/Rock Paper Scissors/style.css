@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+    background-color: #00ead3;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    color: #005f99;
+    text-align: center;
+}
+
+span {
+    margin: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    transition: ease-in-out 0.4s;
+}
+
+button:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#result,
+#resultScore {
+    color: red;
+}
+
+#app {
+    width: 400px;
+    height: 500px;
+    background-color: #fff5b7;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 21px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: ease-in-out 0.4s;
+    margin: 0 auto;
+}
+
+#app:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+}
+
+
+#play {
+    display: none;
+}
+
+#gameContainer {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#buttonContainer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.inputDiv {
+    width: 100px;
+    margin: 80px auto;
+    text-align: left;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
