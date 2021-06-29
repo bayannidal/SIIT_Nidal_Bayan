@@ -48,6 +48,7 @@ let c = 0;
 
 var randomTop;
 var randomLeft;
+
 function generateMap() {
     gameContainer.style.display = 'block';
     let array = [];
@@ -57,8 +58,8 @@ function generateMap() {
     c++
 
     for (let i = 0; i < 1; i++) {
-
         let divElement = document.createElement('div');
+
         randomTop = array[Math.floor(Math.random() * array.length)];
         randomLeft = array[Math.floor(Math.random() * array.length)];
         divElement.style.top = randomTop + 'px';
