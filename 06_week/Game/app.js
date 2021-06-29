@@ -24,7 +24,7 @@ window.addEventListener("keydown", function (event) {
     if (player.style.left == -40 + 'px' || player.style.left == 400 + 'px') {
         player.style.left = left + 0 + 'px';
     }
-    // generateMap();
+    obstacle(randomTop, randomLeft)
     finish(360, 360)
 });
 
@@ -46,6 +46,8 @@ function obstacle(top, left) {
 }
 let c = 0;
 
+var randomTop;
+var randomLeft;
 function generateMap() {
     gameContainer.style.display = 'block';
     let array = [];
@@ -57,8 +59,8 @@ function generateMap() {
     for (let i = 0; i < 1; i++) {
 
         let divElement = document.createElement('div');
-        var randomTop = array[Math.floor(Math.random() * array.length)];
-        var randomLeft = array[Math.floor(Math.random() * array.length)];
+        randomTop = array[Math.floor(Math.random() * array.length)];
+        randomLeft = array[Math.floor(Math.random() * array.length)];
         divElement.style.top = randomTop + 'px';
         divElement.style.left = randomLeft + 'px';
         divElement.classList.add('obstacle');
@@ -74,16 +76,4 @@ function generateMap() {
 
 
 
-function x() {
 
-    let a = [[0, 1, 1], [0, 0, 1], [1, 1, 1]];
-
-    for (var i = 0; i < a[i].length; i++) {
-        for (var z = 0; z < a.length; z++) {
-            console.log(a[z][i]);
-        }
-    }
-
-    // console.log(x);
-
-}
