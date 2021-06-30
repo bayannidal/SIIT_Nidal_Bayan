@@ -24,7 +24,9 @@ window.addEventListener("keydown", function (event) {
     if (player.style.left == -40 + 'px' || player.style.left == 400 + 'px') {
         player.style.left = left + 0 + 'px';
     }
-    obstacle(randomTop, randomLeft)
+    for (let i = 0; i < numberOfobs; i++) {
+        obstacle(randomTopArray[i], randomLeftArray[i])
+    }
     finish(360, 360)
 });
 
@@ -45,10 +47,9 @@ function obstacle(top, left) {
     }
 }
 let c = 0;
-
-var randomTop;
-var randomLeft;
-
+var numberOfobs = 3;
+const randomTopArray = [];
+const randomLeftArray = [];
 function generateMap() {
     gameContainer.style.display = 'block';
     let array = [];
@@ -57,13 +58,17 @@ function generateMap() {
     }
     c++
 
-    for (let i = 0; i < 1; i++) {
-        let divElement = document.createElement('div');
+    for (let i = 0; i < numberOfobs; i++) {
 
-        randomTop = array[Math.floor(Math.random() * array.length)];
-        randomLeft = array[Math.floor(Math.random() * array.length)];
-        divElement.style.top = randomTop + 'px';
-        divElement.style.left = randomLeft + 'px';
+        let divElement = document.createElement('div');
+        var randomTop = Math.floor(Math.random() * array.length)
+        var randomLeft = Math.floor(Math.random() * array.length)
+
+        randomTopArray.push(array[randomTop]);
+        randomLeftArray.push(array[randomLeft]);
+
+        divElement.style.top = randomTopArray[i] + 'px';
+        divElement.style.left = randomLeftArray[i] + 'px';
         divElement.classList.add('obstacle');
         if (c <= 1) {
             gameContainer.appendChild(divElement);
@@ -72,9 +77,3 @@ function generateMap() {
     }
 
 }
-
-
-
-
-
-
