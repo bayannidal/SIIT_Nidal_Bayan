@@ -21,8 +21,9 @@ class Spaceship {
         imgEl.style.display = "block";
         imgEl.style.top = this.top;
         imgEl.style.left = this.left;
-        imgEl.style.transition = 'linear 0.4s'
+        imgEl.style.transition = 'linear 0.2s'
         imgEl.style.backgroundColor = 'grey'
+        imgEl.style.border = '1px solid red'
         imgEl.style.padding = '10px'
         imgEl.style.left = '0'
         return imgEl;
