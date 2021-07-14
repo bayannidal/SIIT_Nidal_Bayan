@@ -1,0 +1,12 @@
+#todo-list {
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.todo>button,
+input,
+p {
+    display: inline-block;
+}
