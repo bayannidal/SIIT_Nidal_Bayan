@@ -21,7 +21,7 @@ window.addEventListener("keydown", function (event) {
     if (player.style.top == -40 + 'px' || player.style.top == 400 + 'px') {
         player.style.top = top + 0 + 'px';
     }
-    if (player.style.left == -40 + 'px' || player.style.left == 400 + 'px') {
+    if (player.style.left == -40 + 'px' || player.style.left == 400 + 'px') { 
         player.style.left = left + 0 + 'px';
     }
     for (let i = 0; i < numberOfobs; i++) {
