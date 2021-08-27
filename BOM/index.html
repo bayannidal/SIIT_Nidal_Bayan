@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+</head>
+
+<body>
+    <p>Select lanuage:</p>
+    <div>
+        <input type="radio" id="romanian" name="language" value="romanian" onchange="setLocalStorageData()">
+        <label for="romanian">Romanian</label>
+    </div>
+
+    <div>
+        <input type="radio" id="english" name="language" value="english" onchange="setLocalStorageData()">
+        <label for=" english">English</label>
+    </div>
+    <div>
+        <input type="radio" id="deutch" name="language" value="deutch" onchange="setLocalStorageData()">
+        <label for="deutch">Deutch</label>
+    </div>
+
+
+    <p>Select currency:</p>
+    <div>
+        <input type="radio" id="euro" name="currency" value="euro" onchange="setLocalStorageData()">
+        <label for="euro">Euro</label>
+    </div>
+
+    <div>
+        <input type="radio" id="dollar" name="currency" value="dollar" onchange="setLocalStorageData()">
+        <label for="dollar">Dollar</label>
+    </div>
+
+
+    <script src="app.js"> </script>
+</body>
+
+</html>
